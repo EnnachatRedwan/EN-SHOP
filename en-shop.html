@@ -431,31 +431,46 @@
               <form>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email address:</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="e.g. Redwan@example.com"
-                  />
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-envelope-fill"></i>
+                    </span>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="e.g. Redwan@example.com"
+                    />
+                  </div>
                 </div>
                 <div class="mb-3">
                   <label for="name" class="form-label">Name:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="e.g. Redwan"
-                  />
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-person-fill"></i>
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="e.g. Redwan"
+                    />
+                  </div>
                 </div>
                 <div class="mb-3">
                   <label for="querySelect" class="mb-2 from-label"
                     >Your question:</label
                   >
-                  <select id="querySelect" class="form-select">
-                    <option value="#">Normal question</option>
-                    <option value="#">Pricing question</option>
-                    <option value="#">Problem reporting</option>
-                  </select>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-chat-left-dots-fill"></i>
+                    </span>
+                    <select id="querySelect" class="form-select">
+                      <option value="#">Normal question</option>
+                      <option value="#">Pricing question</option>
+                      <option value="#">Problem reporting</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="mb-3">
                   <label for="query" class="form-label">Your query</label>
@@ -463,9 +478,12 @@
                     id="query"
                     class="form-control"
                     style="height: 200px"
+                    placeholder="Enter your query here"
                   ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary btn-lg px-5">
+                  Submit
+                </button>
               </form>
             </div>
           </div>
