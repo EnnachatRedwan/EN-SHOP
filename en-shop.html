@@ -10,6 +10,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
     <style>
       section {
         padding: 60px 0px;
@@ -20,7 +24,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">EN-Shop</a>
+        <a class="navbar-brand" href="#"><i class="bi bi-phone"></i> EN-Shop</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,15 +45,19 @@
               <a
                 class="nav-link active text-center"
                 aria-current="page"
-                href="#"
-                >About The Phone</a
+                href="#home"
+                >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-center" href="#">Reviews</a>
+              <a class="nav-link text-center" href="#bestsold">Reviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-center" href="#">Get in touch</a>
+              <a class="nav-link text-center" href="#imac">Imac</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#comments">Comments</a>
             </li>
 
             <li class="nav-item d-lg-none">
@@ -68,10 +76,10 @@
     </nav>
 
     <main>
-      <section>
+      <section id="home">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col text-center text-lg-start">
+            <div class="col text-center text-lg-start my-5">
               <h1>
                 <div class="display-1">EN-SHOP</div>
                 <div class="display-5">Your E-commerce website</div>
@@ -93,6 +101,7 @@
       </section>
 
       <section
+        id="bestsold"
         style="
           background-image: linear-gradient(
             130deg,
@@ -108,70 +117,359 @@
             <h1 class="display-6 text-white">Best Offers</h1>
             <h2 class="text-light lead">Choose your offer</h2>
           </div>
-        
 
-        <div
-          class="row my-4 justify-content-center align-items-center g-3 g-lg-0"
-        >
-          <div class="col-11 col-sm-9 col-md-3">
-            <div class="card">
-              <div class="card-body py-3 py-lg-5 text-center">
-                <h1 class="card-title h2">Iphone 12</h1>
-                <p class="card-subtitle my-2">Comes with</p>
-                <div class="lead">A14 chip</div>
-                <div class="lead">256GB of storage</div>
-                <div class="lead">6GB of RAM</div>
-                <h2 class="display-6 fw-bold text-muted my-3">$999</h2>
-                <p class="card-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <button class="btn btn-outline-primary btn-lg px-lg-5 my-2">
-                  Buy Now
-                </button>
+          <div
+            class="row my-4 justify-content-center align-items-center g-3 g-lg-0"
+          >
+            <div class="col-11 col-sm-9 col-md-3">
+              <div class="card">
+                <div class="card-body py-3 py-lg-5 text-center">
+                  <h1 class="card-title h2">Iphone 12</h1>
+                  <p class="card-subtitle my-2">Comes with</p>
+                  <div class="lead">A14 chip</div>
+                  <div class="lead">256GB of storage</div>
+                  <div class="lead">6GB of RAM</div>
+                  <h2 class="display-6 fw-bold text-muted my-3">$999</h2>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                  <button class="btn btn-outline-primary btn-lg px-lg-5 my-2">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-11 col-sm-9 col-md-4">
-            <div class="card shadow-sm">
-              <div class="card-header text-center">Most sold</div>
-              <div class="card-body py-3 py-lg-5 text-center">
-                <h1 class="card-title">Iphone 14 pro max</h1>
-                <p class="card-subtitle my-2">Comes with</p>
-                <div class="lead">A16 chip</div>
-                <div class="lead">1TB of storage</div>
-                <div class="lead">8GB of RAM</div>
-                <h2 class="display-5 fw-bold text-muted my-3">$12000</h2>
-                <p class="card-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <button class="btn btn-primary btn-lg px-lg-5 my-2">
-                  Buy Now
-                </button>
+            <div class="col-11 col-sm-9 col-md-4">
+              <div class="card shadow-lg">
+                <div class="card-header text-center">Most sold</div>
+                <div class="card-body py-3 py-lg-5 text-center">
+                  <h1 class="card-title">Iphone 14 pro max</h1>
+                  <p class="card-subtitle my-2">Comes with</p>
+                  <div class="lead">A16 chip</div>
+                  <div class="lead">1TB of storage</div>
+                  <div class="lead">8GB of RAM</div>
+                  <h2 class="display-5 fw-bold text-muted my-3">$12000</h2>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                  <button class="btn btn-primary btn-lg px-lg-5 my-2">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-11 col-sm-9 col-md-3">
-            <div class="card">
-              <div class="card-body py-3 py-lg-5 text-center">
-                <h1 class="card-title h2">Iphone 13</h1>
-                <p class="card-subtitle my-2">Comes with</p>
-                <div class="lead">A15 chip</div>
-                <div class="lead">512GB of storage</div>
-                <div class="lead">6GB of RAM</div>
-                <h2 class="display-6 fw-bold text-muted my-3">$999</h2>
-                <p class="card-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <button class="btn btn-outline-primary btn-lg px-lg-5 my-2">
-                  Buy Now
-                </button>
+            <div class="col-11 col-sm-9 col-md-3">
+              <div class="card">
+                <div class="card-body py-3 py-lg-5 text-center">
+                  <h1 class="card-title h2">Iphone 13</h1>
+                  <p class="card-subtitle my-2">Comes with</p>
+                  <div class="lead">A15 chip</div>
+                  <div class="lead">512GB of storage</div>
+                  <div class="lead">6GB of RAM</div>
+                  <h2 class="display-6 fw-bold text-muted my-3">$999</h2>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                  <button class="btn btn-outline-primary btn-lg px-lg-5 my-2">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section id="imac">
+        <div class="container">
+          <div class="text-center">
+            <h1 class="display-6">Imac</h1>
+            <h2 class="lead">Latest Imacs</h2>
+          </div>
+
+          <div class="row my-4 justify-content-around align-items-center">
+            <div class="col-10 col-lg-4">
+              <img src="asses/imac.png" class="img-fluid" alt="imac" />
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="imacAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Imac M1
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#imacAccordion"
+                  >
+                    <div class="accordion-body">
+                      <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum,
+                      dolor sit amet consectetur adipisicing elit. Distinctio a
+                      sit voluptatum fuga obcaecati. Soluta, quos! Dignissimos,
+                      voluptatibus sed! Nobis, neque corporis nesciunt ipsa
+                      culpa cumque quae et illo dolore?
+                      <code>.accordion-body</code>, though the transition does
+                      limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Imac 2019
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#imacAccordion"
+                  >
+                    <div class="accordion-body">
+                      <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit. Pariatur non
+                      quasi, nulla quaerat blanditiis, ratione voluptas
+                      accusamus dicta ullam expedita veniam cupiditate odio
+                      consequatur sint voluptatibus error fugiat veritatis
+                      reiciendis. <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Imac 2017
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#imacAccordion"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds
+                      the appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It's also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Imac 2015
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#imacAccordion"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds
+                      the appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It's also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comments" class="bg-light">
+        <div class="container">
+          <div class="text-center">
+            <h1 class="display-6">Comments</h1>
+            <h2 class="lead">Recent Comments</h2>
+          </div>
+          <div class="row my-4 justify-content-center">
+            <div class="col-lg-10">
+              <ul class="list-group">
+                <li class="list-group-item p-4">
+                  <h2 class="display-6">Good shop</h2>
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    ratione sunt ducimus qui maxime obcaecati cupiditate
+                    voluptatum corporis perspiciatis vel.
+                  </p>
+                  <small>Bt ENNACHAT Redwan</small>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </li>
+                <li class="list-group-item p-4">
+                  <h2 class="display-6">Good shop</h2>
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    ratione sunt ducimus qui maxime obcaecati cupiditate
+                    voluptatum corporis perspiciatis vel.
+                  </p>
+                  <small>Bt ENNACHAT Redwan</small>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </li>
+                <li class="list-group-item p-4">
+                  <h2 class="display-6">Good shop</h2>
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    ratione sunt ducimus qui maxime obcaecati cupiditate
+                    voluptatum corporis perspiciatis vel.
+                  </p>
+                  <small>Bt ENNACHAT Redwan</small>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </li>
+                <li class="list-group-item p-4">
+                  <h2 class="display-6">Good shop</h2>
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    ratione sunt ducimus qui maxime obcaecati cupiditate
+                    voluptatum corporis perspiciatis vel.
+                  </p>
+                  <small>Bt ENNACHAT Redwan</small>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </li>
+                <li class="list-group-item p-4">
+                  <h2 class="display-6">Good shop</h2>
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    ratione sunt ducimus qui maxime obcaecati cupiditate
+                    voluptatum corporis perspiciatis vel.
+                  </p>
+                  <small>Bt ENNACHAT Redwan</small>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="text-center">
+            <h1 class="display-6">Contact Us</h1>
+            <h2 class="lead">Leave Your Message</h2>
+          </div>
+          <div class="row py-4 justify-content-center">
+            <div class="col-lg-6">
+              <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="e.g. Redwan@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="e.g. Redwan"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="querySelect" class="mb-2 from-label"
+                    >Your question:</label
+                  >
+                  <select id="querySelect" class="form-select">
+                    <option value="#">Normal question</option>
+                    <option value="#">Pricing question</option>
+                    <option value="#">Problem reporting</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="query" class="form-label">Your query</label>
+                  <textarea
+                    id="query"
+                    class="form-control"
+                    style="height: 200px"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
