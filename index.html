@@ -22,7 +22,10 @@
     <title>EN-SHOP</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm"
+      style="position: sticky; top: 0%; left: 0%; z-index: 100000"
+    >
       <div class="container">
         <a class="navbar-brand" href="#"><i class="bi bi-phone"></i> EN-Shop</a>
         <button
@@ -60,6 +63,10 @@
               <a class="nav-link text-center" href="#comments">Comments</a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#contact">Contact us</a>
+            </li>
+
             <li class="nav-item d-lg-none">
               <a class="nav-link text-center" href="#">Buy Now</a>
             </li>
@@ -84,7 +91,7 @@
                 <div class="display-1">EN-SHOP</div>
                 <div class="display-5">Your E-commerce website</div>
                 <p class="lead pt-3">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  This website was created by <strong>ENNACHAT Redwan</strong>.
                 </p>
               </h1>
               <a href="#" class="btn btn-primary btn-lg px-4">Buy Now</a>
@@ -149,7 +156,7 @@
                   <div class="lead">A16 chip</div>
                   <div class="lead">1TB of storage</div>
                   <div class="lead">8GB of RAM</div>
-                  <h2 class="display-5 fw-bold text-muted my-3">$12000</h2>
+                  <h2 class="display-5 fw-bold text-muted my-3">$1200</h2>
                   <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   </p>
@@ -432,7 +439,12 @@
                 <div class="mb-3">
                   <label for="email" class="form-label">Email address:</label>
                   <div class="input-group">
-                    <span class="input-group-text">
+                    <span
+                      class="input-group-text"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Your email"
+                    >
                       <i class="bi bi-envelope-fill"></i>
                     </span>
                     <input
@@ -446,7 +458,12 @@
                 <div class="mb-3">
                   <label for="name" class="form-label">Name:</label>
                   <div class="input-group">
-                    <span class="input-group-text">
+                    <span
+                      class="input-group-text"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Your name"
+                    >
                       <i class="bi bi-person-fill"></i>
                     </span>
                     <input
@@ -462,7 +479,12 @@
                     >Your question:</label
                   >
                   <div class="input-group">
-                    <span class="input-group-text">
+                    <span
+                      class="input-group-text"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Your query"
+                    >
                       <i class="bi bi-chat-left-dots-fill"></i>
                     </span>
                     <select id="querySelect" class="form-select">
@@ -490,11 +512,26 @@
         </div>
       </section>
     </main>
+    <footer class="py-4 bg-dark text-center">
+      <h1 class="text-white lead">
+        Created by <strong>ENNACHAT Redwan</strong>
+      </h1>
+      <p class="text-secondary">&copy; copyright 2022</p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
   </body>
 </html>
